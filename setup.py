@@ -9,7 +9,7 @@ import os
 PROJECT_DIR = os.path.dirname(__file__)
 
 setup(
-     name='single_photons',  
+     name='non_linearity',  
      version='0.0.1',
      author='Quantum Adventures',
      author_email='laboratorio.quantica.cetuc@gmail.com',

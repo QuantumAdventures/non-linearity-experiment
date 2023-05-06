@@ -1,13 +1,12 @@
-# Code for the Optical Bottle Beam
+# Code for the Non-Linearity Project
 
-This repo includes the code to process and analyse the data for the Optical Bottle Beam experiment. Here we are going to present:
+This repo includes the code to simulate an optical tweezer in the underdamped regime and consider an external force.
 
-
-* Image processing methodologies to extract and track a Silica microparticle in a .mp4 video.
-* Statistical tools to analyse gaussianity (Kolmogorov-Smirnov test) in the data.
-* Functions to calculate Kullback-Leibler divergece between simulation and experiment, allowing to find which value of NA (Numerical Aberture) better fits the one in the experimental setup.
-* Potential analysis. With the coordinates for the center of mass of the particle extracted via image processing, a `curve_fit` is executed on the probability distribution of the coordinates. The fit results in the extraction of the following constants: $k_\rho$, $k_z$ and $k_{\rho,z}$. These parameters allow the reconstruction of the potential and provide useful insights regarding the optical trap.
-* Error analysis. Scripts to check if the polynomial approximation encountered for the dipole regime is also valid for the intermediate regime.
+* Element 1
+* Element 2
+* Element 3
+* Element 4
+* Element 5
 
 
 ## Installation
@@ -18,13 +17,13 @@ Well, now, how can you run this code? Follow the next steps.
     * Via SSH:
 
     ```bash
-    git clone https://github.com/QuantumAdventures/optical-bottle-beam.git
+    git clone https://github.com/QuantumAdventures/non-linearity-experiment.git
     ```
 
     * Via HTTPS:
 
     ```bash
-    git clone git@github.com:QuantumAdventures/optical-bottle-beam.git
+    git clone git@github.com:QuantumAdventures/non-linearity-experiment.git
     ```
 
     * Or, by downloading the .zip of the repo and unziping in your computer.
@@ -35,70 +34,15 @@ Well, now, how can you run this code? Follow the next steps.
 pip install -r requirements.txt
 ```
 
-3. Download the data! A `data` folder is needed, to get all the data used and produced in the experiment you can
+3. Run the following command:
 
-    * Follow the link [here](https://drive.google.com/drive/folders/1XfC4z9nmNXJuaATl3Da6edwA65mmQBVx), and download it.
-
-    * Or, execute the following command inside the project folder (in the terminal like a boss :sunglasses:)
-
-    ```bash
-    ./download.sh
-    ```
-
-    For this you are going to need wget (which can be installed with `sudo apt get wget` or `brew install wget`, depending on the OS you use).
-    
-In the end you should have the following directory structure:
-
-
-    ├── data
-    │   ├── dataframes
-    │   │   ├── filtered
-    │   │   ├── outliers
-    │   │   └── raw
-    │   ├── images
-    │   │   ├── circle
-    │   │   ├── hour
-    │   │   ├── long
-    │   │   └── square
-    │   ├── plots
-    │   ├── quadrant
-    │   ├── results
-    │   ├── simulations
-    │   │   ├── error_analysis
-    │   │   ├── kl
-    │   │   └── obb_nas
-    │   └── videos
-    ├── notebooks
-    │   ├── 1. Create frames from video.ipynb
-    │   ├── 2. Microparticle detection and tracking.ipynb
-    │   ├── 2.1. Execute detection for multiple images.ipynb
-    │   ├── 3. Potential Analysis with Multiple Parameters.ipynb
-    │   ├── 4. Kullback-Leibler Analysis.ipynb
-    │   ├── 5. Error Analysis for Intermediate Regime.ipynb
-    │   └── 6. Gaussianity tests for optical tweezers.ipynb
-    ├── scripts
-    │   ├── calculate_psd_of_experiments.py
-    │   ├── calculate_psd_of_simulations.py
-    │   ├── DFT_simulation.m
-    ├── LICENSE
-    ├── README.md
-    └── requirements.txt
+```bash
+python setup.py install
+```
 
 ## Usage
 
-With the data downloaded, all the notebooks can be executed. To execute the scripts, run the following command inside the `optical-bottle-beam` folder:
-
-```bash
-python scripts/calculate_psd_of_experiments.py
-```
-
-Or 
-
-```bash
-python scripts/calculate_psd_of_simulations.py
-```
-
-
+Under construction 
 
 ## License
 
