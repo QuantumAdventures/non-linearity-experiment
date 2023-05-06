@@ -1,3 +1,6 @@
 .DS_Store
 *.pyc
 *__pycache__
+dist/
+non_linearity.egg-info
+build/
