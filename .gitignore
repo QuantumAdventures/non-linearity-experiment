@@ -4,3 +4,4 @@
 dist/
 non_linearity.egg-info
 build/
+notebooks/.ipynb_checkpoints
