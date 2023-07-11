@@ -1,5 +1,5 @@
 import numpy as np
-from single_photons.utils.constants import *
+from non_linearity.utils.constants import *
 
 
 class Particle:
@@ -12,6 +12,7 @@ class Particle:
         self.C = np.array([[1, 0]])
         self.G = np.array([[0], [1]])
         self._m_ = rho*4*np.pi*np.power(radius, 3)/3
+        
     def step(self, states, control=0.0, delta_t=50e-2):
         if states.size > 2:
             raise ValueError('States size for this specific system is equal to two \
