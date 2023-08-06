@@ -3,7 +3,7 @@ from numba import jit
 
 
 @jit(nopython=True)
-def simulation_filter(omega, gamma, noise_std, dt, N_time, G, delay, a, b):
+def simulation_filter(omega, gamma, noise_std, dt, N_time, G, a, b):
     state = np.zeros(shape=(N_time, 2))
     x_window = np.zeros(b.shape)
     y_window = np.zeros((a.shape[0] - 1))
