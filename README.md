@@ -51,7 +51,8 @@ python setup.py install
 
 ## Usage
 
-With the data downloaded and the project package installaed, all the notebooks can be executed. One important observation is regarding the plots, all the plots use a latex plugin, is important to be sure you are able to use this plugin in your machine, if not we recommend to install it or comment the code lines in the beggining of each notebook where the plot settings are made.
+With the data downloaded and the project package installed, all the notebooks can be executed. One important observation is regarding the plots; all the plots use a LaTeX plugin. It is important to ensure that you are able to use this plugin on your machine. If not, we recommend installing it or commenting the code lines at the beginning of each notebook where the plot settings are made.
+
 
 
 ## License
