@@ -5,7 +5,7 @@ from numba import jit
 @jit(nopython=True)
 def simulation(omega, gamma, noise_std, dt, N_time, G, delay):
     state = np.zeros(shape=(N_time, 2))
-    p = 0
+    p = 1
     x = 0
     for k in range(N_time):
         if k > delay:

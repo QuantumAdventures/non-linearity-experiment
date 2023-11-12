@@ -22,7 +22,7 @@ Well, now, how can you run this code? Follow the next steps.
     * Via HTTPS:
 
     ```bash
-    git clone git@github.com:QuantumAdventures/optical-bottle-beam.git
+    git clone git@github.com:QuantumAdventures/non-linearity-experiment.git
     ```
 
     * Or, by downloading the .zip of the repo and unziping in your computer.
@@ -33,64 +33,25 @@ Well, now, how can you run this code? Follow the next steps.
 pip install -r requirements.txt
 ```
 
+3. Install the project. This step is mandatory, inside the root folder of the project run the following command on terminal
+
+
+
+```bash
+python setup.py install
+```
+
+
+
 3. Download the data! A `data` folder is needed, to get all the data used and produced in the experiment you can
 
     * Follow the link [here](https://drive.google.com/drive/folders/1OXutfn_C_7TzHMjxG4hueFKlQWNWipJT), and download it.
 
     * The recommendation is to download only a fraction of the data
 
-
-In the end you should have the following directory structure:
-
-
-    ├── data
-    │   ├── dataframes
-    │   │   ├── filtered
-    │   │   ├── outliers
-    │   │   └── raw
-    │   ├── images
-    │   │   ├── circle
-    │   │   ├── hour
-    │   │   ├── long
-    │   │   └── square
-    │   ├── plots
-    │   ├── quadrant
-    │   ├── results
-    │   ├── simulations
-    │   │   ├── error_analysis
-    │   │   ├── kl
-    │   │   └── obb_nas
-    │   └── videos
-    ├── notebooks
-    │   ├── 1. Create frames from video.ipynb
-    │   ├── 2. Microparticle detection and tracking.ipynb
-    │   ├── 2.1. Execute detection for multiple images.ipynb
-    │   ├── 3. Potential Analysis with Multiple Parameters.ipynb
-    │   ├── 4. Kullback-Leibler Analysis.ipynb
-    │   ├── 5. Error Analysis for Intermediate Regime.ipynb
-    │   └── 6. Gaussianity tests for optical tweezers.ipynb
-    ├── scripts
-    │   ├── calculate_psd_of_experiments.py
-    │   ├── calculate_psd_of_simulations.py
-    │   ├── DFT_simulation.m
-    ├── LICENSE
-    ├── README.md
-    └── requirements.txt
-
 ## Usage
 
-With the data downloaded, all the notebooks can be executed. To execute the scripts, run the following command inside the `optical-bottle-beam` folder:
-
-```bash
-python scripts/calculate_psd_of_experiments.py
-```
-
-Or 
-
-```bash
-python scripts/calculate_psd_of_simulations.py
-```
-
+With the data downloaded and the project package installaed, all the notebooks can be executed. One important observation is regarding the plots, all the plots use a latex plugin, is important to be sure you are able to use this plugin in your machine, if not we recommend to install it or comment the code lines in the beggining of each notebook where the plot settings are made.
 
 
 ## License
