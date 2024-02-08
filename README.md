@@ -53,7 +53,9 @@ python setup.py install
 
 With the data downloaded and the project package installed, all the notebooks can be executed. One important observation is regarding the plots; all the plots use a LaTeX plugin. It is important to ensure that you are able to use this plugin on your machine. If not, we recommend installing it or commenting the code lines at the beginning of each notebook where the plot settings are made.
 
+## FPGA
 
+The complete FPGA project implemetend in the Red Pitaya can be found zipped [here](https://drive.google.com/file/d/13oADYg178D4p4PZ8vpfv2hjXdbjD0Tjp/view?usp=drive_link)
 
 ## License
 
@@ -86,7 +88,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #Name - [Linkedin](https://www.linkedin.com/in) [Email](email)
 
 
-Project Link: [Repository](https://github.com/QuantumAdventures/optical-bottle-beam)
+Project Link: [Repository](https://github.com/QuantumAdventures/non-linearity-experiment)
 
 ## References
 
